@@ -1,0 +1,147 @@
+:root {
+  --main-color: #f54900;
+  --secondary-color: #ffedd4;
+}
+
+@media screen and (max-width: 576px) {
+main section .row .recipe .top h3 {
+  text-wrap: wrap;
+}
+
+
+main section .row .recipe .top p {
+  text-wrap: wrap;
+}
+
+   /* main section .leftside {
+      aspect-ratio: 1/2;
+      min-height: 20rem;
+      max-height: 10rem;
+  } */
+
+    main section .heroimage {
+      /* aspect-ratio: 1/2; */
+      min-height: 20rem;
+      /* max-height: 10rem; */
+  }
+
+  main section .row .leftside .bottom {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  /* transform: translate(-50%); */
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+
+  main section .row .recipe .top h3 {
+    font-size: 1.5rem;
+  }
+
+  main section .row .recipe .top p {
+    font-size: 0.875rem;
+  }
+
+  main section .row .recipe .warning .title {
+    font-size: 0.875rem;
+  }
+
+  main section .row .recipe .warning .info {
+    font-size: 0.75rem;
+  }
+
+  main section .row .recipe .nav .nav-item .nav-link {
+    font-size: 0.75rem;
+  }
+
+  main section .row .recipe .tab-content #pills-nutrition .title {
+    font-size: 0.75rem;
+  }
+
+  main section .row .recipe .tab-content #pills-nutrition .number {
+    font-size: 1rem;
+  }
+
+  main section .row .recipe .tryagain .btn {
+    font-size: 0.875rem;
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+main section .row .recipe .nav .nav-item .nav-link {
+  padding: .5rem;
+}
+
+main section .row .recipe {
+  max-height: fit-content;
+  min-height: fit-content;
+}
+ main section .row .recipe .tab-content #pills-nutrition .items {
+  overflow-y: auto;
+}
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1033px) {
+main section .row .leftside .bottom .item .title {
+  font-size: .75rem;
+}
+
+main section .row .leftside .bottom .item .time {
+  font-size: .875rem;
+}
+}
+
+@media screen and (min-width: 991px) {
+  .navbar .right span {
+    display: none;
+  }
+
+  main section .heroimage img {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  main section .heroimage {
+    aspect-ratio: 0;
+  }
+  
+  main section .row .recipe .nav .nav-item .nav-link {
+    font-size: .875rem;
+  }
+
+ 
+
+    /* main section .row .rightside {
+  overflow-y: auto;
+  
+} */
+
+
+}
+
+@media screen and (min-width: 1009px) and (max-width: 1018px) {
+  main section .row .recipe .nav .nav-item .nav-link {
+    font-size: .875rem;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+  
+}
+
+@media screen and (max-width: 1024px) {
+}

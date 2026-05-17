@@ -1,0 +1,458 @@
+/* Global Styles */
+
+:root {
+  --main-color: #f54900;
+  --secondary-color: #ffedd4;
+}
+
+@font-face {
+  font-family: notosans;
+  src: url(../Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  font-family: notosans;
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Days One", sans-serif;
+} */
+
+/* ::selection {
+  color: oklch(98.5% 0.002 247.839);
+  background-color: #a684ff;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 10px;
+}
+
+body {
+  background-color: #fefbea;
+  overflow-x: hidden;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  margin: 0.8rem;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFDBD2;
+  border-radius: 1.25rem;
+  transition: all 0.1s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b46653;
+}
+
+/* ============================================================
+============================================================
+============================================================ */
+
+/* Section 0 navbar */
+
+/* Section Start */
+
+.navbar {
+  border-bottom: 0.0625rem solid #ffedd4;
+  box-shadow: 0px 2px 2px #0000001a;
+  padding: 1rem 1.5rem;
+}
+
+.navbar .navbar-brand i {
+  background-image: linear-gradient(-90deg, #fb2c36, #ff6900);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+}
+
+.navbar .logoname h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar .logoname p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.navbar .right .image {
+  border: 0.125rem solid #ffb86a;
+  width: 2.5rem;
+  border-radius: 50px;
+}
+
+.navbar .right i {
+  color: #4a5565;
+  transition: all 0.1s ease;
+}
+
+.navbar .right i:hover {
+  color: #f54900;
+}
+
+/* Section End */
+
+/* ============================================================
+============================================================
+============================================================ */
+
+/* Section*/
+
+/* Section Start */
+
+main section .container-xxl {
+  padding: 2rem 1.5rem;
+}
+
+main section .dinner {
+  /* padding: 2rem 1.5rem; */
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.5);
+  border: 0.1rem solid #FFEDD4;
+  overflow: hidden;
+}
+
+main section .heroimage img {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  /* max-height: 20rem; */
+  height: 100%;
+  
+}
+
+main section .heroimage {
+  aspect-ratio: 2/1;
+  /* max-height: 45rem; */
+  /* margin-bottom: 1rem; */
+}
+
+main section .row .leftside .top .reviews {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+main section .row .leftside .bottom .item .title {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+main section .row .leftside .bottom .item .time {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main section .row .leftside .bottom {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  /* transform: translate(-50%); */
+}
+
+main section .row .leftside .bottom .fa-clock {
+  color: var(--main-color);
+}
+
+main section .row .leftside .bottom .fa-fire-burner {
+  color: red;
+}
+
+main section .row .leftside .bottom .fa-users {
+  color: #2b7fff;
+}
+
+main section .row .leftside .top {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0px 2px 15px rgba(128, 128, 128, 0.5);
+}
+
+/* main section .row .recipe {
+  min-height: 100%;
+} */
+
+main section .row .recipe .top span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+main section .row .recipe .top .greencolor {
+  color: #008236;
+  background-color: #dbfce7;
+}
+
+main section .row .recipe .top .bluecolor {
+  color: #1447e6;
+  background-color: #dbeafe;
+}
+
+main section .row .recipe {
+  /* border-radius: 20px; */
+  padding: 1rem;
+  /* max-height: 45rem;
+  min-height: 45rem; */
+}
+
+main section .row .rightside {
+  max-height: 45rem;
+  min-height: 45rem;
+overflow-y: auto;
+}
+
+main section .row .recipe .top h3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-wrap: nowrap;
+}
+
+main section .row .recipe .top p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+main section .row .recipe .top {
+  margin-bottom: 1.5rem;
+}
+
+main section .row .recipe .top .right i {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease;
+}
+
+main section .row .recipe .top .right i:hover {
+  background-color: #ffd6a7;
+  cursor: pointer;
+}
+
+main section .row .recipe .warning {
+  background-color: #fef2f2;
+  border-left: 0.3rem solid #fb2c36;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+main section .row .recipe .warning .title {
+  color: #9F0712;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main section .row .recipe .warning .info {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+main section .row .recipe .warning i {
+  color: var(--main-color);
+}
+
+main section .row .recipe .nav .nav-item .nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6a7282;
+  /* min-width: fit-content; */
+
+  /* transition: all 0.1s ease; */
+}
+
+main section .row .recipe .nav .nav-item .nav-link:hover {
+  color: #364153;
+}
+
+main section .row .recipe .nav .nav-item .active {
+  color: var(--main-color);
+  border-bottom: 0.2rem solid var(--main-color);
+}
+
+main section .row .recipe .nav {
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #ebe6e7;
+}
+
+main section .row .recipe .tab-content #pills-ingredients .number {
+  background-color: #ff6900;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+main section .row .recipe .tab-content #pills-ingredients .items .info {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main section .row .recipe .tab-content #pills-ingredients .items {
+  background-color: #fffbeb;
+  padding: 1.5rem;
+  height: 18.75rem;
+}
+
+main section .row .recipe .tab-content #pills-instructions .number {
+  background-color: #ff6900;
+  min-width: 3rem;
+  min-height: 3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main section .row .recipe .tab-content #pills-instructions .items .info {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main section .row .recipe .tab-content #pills-instructions .items {
+  padding: 1.5rem;
+  height: 18.75rem;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .items {
+  padding: 1.5rem;
+  height: 18.75rem;
+}
+
+main section .row .recipe .tab-content #pills-nutrition i {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-fire {
+  background-color: #ffedd4;
+  color: var(--main-color);
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-dumbbell {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-wheat-awn {
+  background-color: #fef9c2;
+  color: #d08700;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-droplet {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-seedling {
+  background-color: #dbfce7;
+  color: #00a63e;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .fa-cube {
+  background-color: #fce7f3;
+  color: #e60076;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .item {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main section .row .recipe .tab-content #pills-nutrition .number {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main section .row .recipe .tab-content #pills-tips .items {
+  padding: 1.5rem;
+  height: 18.75rem;
+}
+
+main section .row .recipe .tab-content #pills-tips i {
+  font-size: 1.2rem;
+  color: #e17100;
+}
+
+main section .row .recipe .tab-content #pills-tips .item {
+  background-color: #fffbeb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 0.25rem solid #ffb900;
+  border-radius: 1rem;
+}
+
+main section .row .recipe .tab-content #pills-tips .info {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #364153;
+}
+
+main section .tryagain .btn {
+  background-image: linear-gradient(-90deg, #fb2c36, #ff6900);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+main section .tryagain .btn:hover {
+  transform: scale(105%);
+  background-image: linear-gradient(-90deg, #fb2c36, #fb2c36);
+}
+
+main section .tryagain {
+  margin-top: 2rem;
+  border-top: 0.0625rem solid #ebe6e7;
+  padding-top: 1.5rem;
+}
+
+/* Section End */

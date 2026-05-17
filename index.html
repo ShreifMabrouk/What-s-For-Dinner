@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon/dish (1).png">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <title>What's For Dinner</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid container-xxl">
+        <div class="d-flex flex-grow-1 justify-content-between align-items-center">
+          <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand" href="#">
+            <i
+              class="fa-solid fa-utensils d-flex justify-content-center align-items-center text-white"
+            ></i>
+          </a>
+          <div class="logoname">
+            <h1 class="m-0">What's For Dinner</h1>
+            <p class="text-muted m-0">Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <i class="fa-solid fa-bars fs-3"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul> -->
+          <div
+            class="right d-flex flex-column flex-lg-row justify-content-center align-items-lg-center gap-3 ms-auto mt-4 mt-lg-0"
+          >
+            <div class="bookmark">
+              <button class="border-0 bg-white" href="">
+                <i class="fa-solid fa-bookmark fs-5"></i>
+              </button>
+              <span>Saved Recipes</span>
+            </div>
+            <div class="clock">
+              <button class="border-0 bg-white" href="">
+                <i class="fa-solid fa-clock-rotate-left fs-5"></i>
+              </button>
+              <span>Recent</span>
+            </div>
+            <div class="gear">
+              <button class="border-0 bg-white" href="">
+                <i class="fa-solid fa-gear fs-5"></i>
+              </button>
+              <span>Settings</span>
+            </div>
+            <div class="profile">
+              <button class="border-0 bg-white" href="">
+                <div class="image">
+                  <img
+                    class="w-100 rounded-circle"
+                    src="./images/avatar-4 (1).jpg"
+                    alt="Man with beard in grey sweater"
+                  />
+                </div>
+              </button>
+              <span>Profile</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <div class="container-fluid container-xxl" id="meal">
+          <div class="row flex-column flex-lg-row dinner bg-white m-auto" id="meal">
+            <div class="leftside col-12 col-lg-5 p-0 position-relative">
+              <div class="heroimage h-100 ">
+                <div
+                  class="top d-flex justify-content-evenly align-items-center gap-2 position-absolute"
+                  id="review"
+                >
+                  <!-- <i class="fa-solid fa-star text-warning"></i>
+                  <span class="rate fw-bold">4.8 </span>
+                  <span class="reviews text-muted">(234 reviews)</span> -->
+                </div>
+                <div
+                  class="bottom position-absolute d-flex justify-content-evenly text-center"
+                  id="imageBottom"
+                >
+                  <!-- <div class="item text-nowrap">
+                  <i class="fa-solid fs-3 fa-clock ms-3 me-3 mb-0"></i>
+                  <p class="title text-muted ms-3 me-3 mb-0">Prep Time</p>
+                  <p class="time ms-3 me-3 mb-0">30 min</p>
+                </div>
+
+                <div class="item text-nowrap">
+                  <i class="fa-solid fs-3 fa-fire-burner ms-3 me-3 mb-0"></i>
+                  <p class="title text-muted ms-3 me-3 mb-0">Cook Time</p>
+                  <p class="time ms-3 me-3 mb-0">60 min</p>
+                </div>
+
+                <div class="item text-nowrap">
+                  <i class="fa-solid fs-3 fa-users ms-3 me-3 mb-0"></i>
+                  <p class="title text-muted ms-3 me-3 mb-0">Servings</p>
+                  <p class="time ms-3 me-3 mb-0">4 people</p>
+                </div> -->
+                </div>
+                <div class="w-100 h-100 overflow-hidden" id="img">
+                  <!-- <img
+                  class="w-100 h-100"
+                  src="./images/Thai Green Curry.avif"
+                  alt="Fried samosas on a wooden tray"
+                /> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="rightside col-12 col-lg-7 p-4">
+              <div class="recipe d-flex flex-column overflow-y-auto">
+                <div class="top row g-0 flex-column-reverse flex-md-row flex-md-nowrap d-flex justify-content-evenly">
+                  <div class="col-12 col-md-7 left" id="topInfo">
+                    <!-- <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="greencolor">Intermediate</span>
+                      <span class="bluecolor">Mediterranean</span>
+                    </div>
+                    <h3 class="">Greek Moussaka</h3>
+                    <p class="m-0">
+                      Traditional layered eggplant casserole with lamb
+                    </p> -->
+                  </div>
+                  <div class="col-12 col-md-5 justify-content-end right d-flex align-items-center gap-2">
+                    <i
+                      class="fa-solid fa-bookmark d-flex justify-content-center align-items-center"
+                    ></i>
+                    <i
+                      class="fa-solid fa-share-nodes d-flex justify-content-center align-items-center"
+                    ></i>
+                  </div>
+                </div>
+                <div id="warning">
+                  <!-- <div class="warning d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <div class="d-flex flex-column justify-content-center">
+                    <p class="m-0 title">Extended Preparation Time</p>
+                    <p class="m-0 text-danger info">
+                      This recipe requires more than 45 minutes to prepare. Plan
+                      accordingly!
+                    </p>
+                  </div>
+                </div> -->
+                </div>
+
+                <!-- <ul class="nav mb-4 d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fa-solid fa-list-check"></i>
+                      ngredients</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-book-open"></i>
+                      Instructions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-chart-pie"></i>
+                      Nutrition</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-lightbulb"></i>
+                      Chef's Tips</a
+                    >
+                  </li>
+                </ul> -->
+
+                <ul
+                  class="nav mb-4 justify-content-around text-nowrap"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link overflow-hidden active"
+                      id="ingredients"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-ingredients"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-ingredients"
+                      aria-selected="true"
+                    >
+                      <i class="fa-solid fa-list-check"></i>
+                      Ingredients
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link overflow-hidden"
+                      id="instructions"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-instructions"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-instructions"
+                      aria-selected="false"
+                    >
+                      <i class="fa-solid fa-book-open"></i>
+                      Instructions
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link overflow-hidden"
+                      id="nutrition"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-nutrition"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-nutrition"
+                      aria-selected="false"
+                    >
+                      <i class="fa-solid fa-chart-pie"></i>
+                      Nutrition
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link overflow-hidden"
+                      id="tips"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-tips"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-tips"
+                      aria-selected="false"
+                    >
+                      <i class="fa-solid fa-lightbulb"></i>
+                      Chef's Tips
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane show active"
+                    id="pills-ingredients"
+                    role="tabpanel"
+                    aria-labelledby="ingredients"
+                    tabindex="0"
+                  >
+                    <div
+                      class="items d-flex flex-column gap-3 overflow-y-auto"
+                      id="ingredientsItems"
+                    >
+                      <!-- <div class="item d-flex gap-2">
+      <span class="number rounded-circle text-white d-flex justify-content-center align-items-center">1</span>
+      <span class="info text-muted">3 large eggplants, sliced</span>
+    </div>
+
+    <div class="item d-flex gap-2">
+      <span class="number rounded-circle text-white d-flex justify-content-center align-items-center">2</span>
+      <span class="info text-muted">500g ground lamb</span>
+    </div> -->
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane"
+                    id="pills-instructions"
+                    role="tabpane2"
+                    aria-labelledby="instructions"
+                    tabindex="0"
+                  >
+                    <div
+                      class="items d-flex flex-column gap-4 overflow-y-auto"
+                      id="instructionsItems"
+                    >
+                      <!-- <div class="item d-flex align-items-center gap-3">
+                        <span
+                          class="number rounded-4 text-white d-flex justify-content-center align-items-center"
+                          >1</span
+                        >
+                        <span class="info text-muted d-flex align-items-center"
+                          >Slice eggplants, salt them, and let sit for 30 minutes. Rinse and pat dry</span
+                        >
+                      </div> -->
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane"
+                    id="pills-nutrition"
+                    role="tabpane3"
+                    aria-labelledby="nutrition"
+                    tabindex="0"
+                  >
+                    <div class="items d-flex flex-column" id="nutritionitems">
+                      <!-- <div class="row w-100 d-flex m-auto">
+
+
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item calories d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color1 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-fire rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Calories</span>
+                      </div>
+                      <span class="number">580 kcal</span>
+                    </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item protein d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color2 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-dumbbell rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Protein</span>
+                      </div>
+                      <span class="number">36g</span>
+                    </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row w-100 d-flex m-auto">
+
+
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item carb d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color3 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-wheat-awn rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Carbohydrates</span>
+                      </div>
+                      <span class="number">32g</span>
+                    </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item fat d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color4 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-droplet rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Fat</span>
+                      </div>
+                      <span class="number">32g</span>
+                    </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row w-100 d-flex m-auto">
+
+                      
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item fiber d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color5 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-seedling rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Fiber</span>
+                      </div>
+                      <span class="number">8g</span>
+                    </div>
+                      </div>
+
+                      <div class="col-12 col-lg-6 mb-3">
+                        <div class="item sodium d-flex justify-content-between align-items-center text-nowrap">
+                      <div class="color6 left d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-cube rounded-3 d-flex justify-content-center align-items-center"></i>
+                      <span class="title text-muted">Sodium</span>
+                      </div>
+                      <span class="number">820mg</span>
+                    </div>
+                      </div>
+                      
+                    </div> -->
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane"
+                    id="pills-tips"
+                    role="tabpane4"
+                    aria-labelledby="tips"
+                    tabindex="0"
+                  >
+
+                  <div class="items d-flex flex-column overflow-y-auto" id="tipsItems">
+                    <div class="item d-flex align-items-baseline gap-2">
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p class="info m-0">Salt eggplant to remove bitterness</p>
+                    </div>
+                  </div>
+                    
+                  </div>
+                </div>
+
+                
+              </div>
+              <div class="tryagain">
+                  <button class="btn text-white mb-3" onclick="tryAgain()">
+                    <a href="#img">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    Try Another Recipe
+                    </a>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
